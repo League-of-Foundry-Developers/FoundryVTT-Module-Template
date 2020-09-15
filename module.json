@@ -1,0 +1,26 @@
+{
+  "name": "module",
+  "title": "New Module",
+  "description": "",
+  "version": "0.0.1",
+  "minimumCoreVersion": "0.6.2",
+  "compatibleCoreVersion": "0.7.2",
+  "author": "Cody Swendrowski <cody@swendrowski.us>",
+  "dependencies": [
+
+  ],
+  "esmodules": [
+    "/scripts/module.js"
+  ],
+  "scripts": [
+    "/scripts/lib/lib.js"
+  ],
+  "styles": [
+    "/styles/module.css"
+  ],
+  "languages": [
+  ],
+  "url": "https://github.com/cswendrowski/FoundryVTT-module",
+  "manifest": "https://github.com/cswendrowski/FoundryVTT-module/releases/download/latest/module.json",
+  "download": "https://github.com/cswendrowski/FoundryVTT-module/releases/download/0.0.1/module.zip"
+}

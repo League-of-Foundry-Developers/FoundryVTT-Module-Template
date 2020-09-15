@@ -1,0 +1,45 @@
+name: Module CI/CD
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    # create a zip file with all files required by the module to add to the release
+    - run: zip -r ./module.zip module.json styles/ scripts/ templates/
+
+    # Get the version from 'module.json'
+    - name: Get Version
+      shell: bash
+      id: get-version
+      run: echo "::set-output name=version::$(node ./.github/workflows/get-version.js)"
+
+    # Create a release for this specific version
+    - name: Create Release
+      id: create_version_release
+      uses: ncipollo/release-action@v1
+      with:
+        allowUpdates: true # set this to false if you want to prevent updating existing releases
+        name: Release ${{ steps.get-version.outputs.version }}
+        draft: false
+        prerelease: false
+        token: ${{ secrets.GITHUB_TOKEN }}
+        artifacts: './module.json,./module.zip'
+        tag: ${{ steps.get-version.outputs.version }}
+
+    # Update the 'latest' release
+    - name: Create Release
+      id: create_latest_release
+      uses: ncipollo/release-action@v1
+      if: endsWith(github.ref, 'master')
+      with:
+        allowUpdates: true
+        name: Latest
+        draft: false
+        prerelease: false
+        token: ${{ secrets.GITHUB_TOKEN }}
+        artifacts: './module.json,./module.zip'
+        tag: latest
