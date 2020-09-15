@@ -19,6 +19,11 @@
     "/styles/module.css"
   ],
   "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    }
   ],
   "url": "https://github.com/cswendrowski/FoundryVTT-module",
   "manifest": "https://github.com/cswendrowski/FoundryVTT-module/releases/download/latest/module.json",
