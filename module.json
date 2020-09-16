@@ -2,7 +2,7 @@
   "name": "module",
   "title": "New Module",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "minimumCoreVersion": "0.6.2",
   "compatibleCoreVersion": "0.7.2",
   "author": "Cody Swendrowski <cody@swendrowski.us>",
