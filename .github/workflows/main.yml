@@ -28,8 +28,8 @@ jobs:
       with:
         files: 'module.json'
       env:
-        manifest: https://github.com/${{GITHUB_REPOSITORY}}/releases/latest/download/module.json
-        download: https://github.com/${{GITHUB_REPOSITORY}}/releases/latest/download/module.zip
+        manifest: https://github.com/${{github.repository}}/releases/latest/download/module.json
+        download: https://github.com/${{github.repository}}/releases/latest/download/module.zip
 
     # Update the 'latest' release
     - name: Create Release
@@ -52,8 +52,8 @@ jobs:
       with:
         files: 'module.json'
       env:
-        manifest: https://github.com/${{GITHUB_REPOSITORY}}/releases/download/${{steps.get-version.outputs.version}}/module.json
-        download: https://github.com/${{GITHUB_REPOSITORY}}/releases/download/${{steps.get-version.outputs.version}}/module.zip
+        manifest: https://github.com/${{github.repository}}/releases/download/${{steps.get-version.outputs.version}}/module.json
+        download: https://github.com/${{github.repository}}/releases/download/${{steps.get-version.outputs.version}}/module.zip
     
     # Create a release for this specific version
     - name: Create Release
