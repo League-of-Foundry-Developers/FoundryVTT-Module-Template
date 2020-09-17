@@ -12,13 +12,13 @@
 
 3. Fill out the release version.
 
+If you want to add details at this stage you can, or you can always come back later and edit them.
+
 ![Release Creation Form](https://user-images.githubusercontent.com/7644614/93409543-225b1000-f865-11ea-9a19-f1906a724421.png)
 
 4. Hit submit.
 
-The Release Title will be overriden by the next step but you can take this opportunity to write in the release body.
-
-1. Wait a few minutes.
+5. Wait a few minutes.
 
 A Github Action will run to populate the `module.json` and `module.zip` with the correct urls that you can then use to distrubute this release. You can check on its status in the "Actions" tab.
 
