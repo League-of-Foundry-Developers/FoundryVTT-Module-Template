@@ -16,9 +16,9 @@
 
 4. Hit submit.
 
-The Release Title and Body will be overriden by the next step so hold off on filling those out.
+The Release Title will be overriden by the next step but you can take this opportunity to write in the release body.
 
-5. Wait a few minutes.
+1. Wait a few minutes.
 
 A Github Action will run to populate the `module.json` and `module.zip` with the correct urls that you can then use to distrubute this release. You can check on its status in the "Actions" tab.
 
