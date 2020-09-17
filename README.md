@@ -10,7 +10,9 @@
 
 ![Draft a new release button.](https://user-images.githubusercontent.com/7644614/93409364-c1333c80-f864-11ea-89f1-abfcb18a8d9f.png)
 
-3. Fill out the release version.
+3. Fill out the release version as the tag name.
+
+## <span color="red">Do not prefix your tag name with a `v`.</span>
 
 If you want to add details at this stage you can, or you can always come back later and edit them.
 
