@@ -18,7 +18,6 @@ jobs:
         files: 'module.json'
       env:
         version: ${{github.event.release.tag_name}}
-        manifest: https://github.com/${{github.repository}}/releases/download/${{github.event.release.tag_name}}/module.json
         download: https://github.com/${{github.repository}}/releases/download/${{github.event.release.tag_name}}/module.zip
 
     # create a zip file with all files required by the module to add to the release
