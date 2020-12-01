@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    #Substitute the Manifest and Download URLs in the module.json
+    # Substitute the Manifest and Download URLs in the module.json
     - name: Substitute Manifest and Download Links For Versioned Ones
       id: sub_manifest_link_version
       uses: microsoft/variable-substitution@v1
@@ -21,7 +21,7 @@ jobs:
         manifest: https://github.com/${{github.repository}}/releases/latest/download/module.json
         download: https://github.com/${{github.repository}}/releases/download/${{github.event.release.tag_name}}/module.zip
 
-    # create a zip file with all files required by the module to add to the release
+    # Create a zip file with all files required by the module to add to the release
     - run: zip -r ./module.zip module.json styles/ scripts/ templates/ languages/
 
     # Create a release for this specific version
@@ -29,26 +29,11 @@ jobs:
       id: create_version_release
       uses: ncipollo/release-action@v1
       with:
-        allowUpdates: true # set this to false if you want to prevent updating existing releases
+        allowUpdates: true # Set this to false if you want to prevent updating existing releases
         name: ${{ github.event.release.name }}
         draft: false
         prerelease: false
         token: ${{ secrets.GITHUB_TOKEN }}
         artifacts: './module.json, ./module.zip'
         tag: ${{ github.event.release.tag_name }}
-        body: ${{ github.event.release.body }}
-
-    # Update the 'latest' release
-    - name: Create Release
-      id: create_latest_release
-      uses: ncipollo/release-action@v1
-      if: endsWith(github.ref, 'master')
-      with:
-        allowUpdates: true
-        name: Latest
-        draft: false
-        prerelease: false
-        token: ${{ secrets.GITHUB_TOKEN }}
-        artifacts: './module.json,./module.zip'
-        tag: latest
         body: ${{ github.event.release.body }}
