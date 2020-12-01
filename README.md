@@ -22,7 +22,7 @@ If you want to add details at this stage you can, or you can always come back la
 
 5. Wait a few minutes.
 
-A Github Action will run to populate the `module.json` and `module.zip` with the correct urls that you can then use to distrubute this release. You can check on its status in the "Actions" tab.
+A Github Action will run to populate the `module.json` and `module.zip` with the correct urls that you can then use to distribute this release. You can check on its status in the "Actions" tab.
 
 ![Actions Tab](https://user-images.githubusercontent.com/7644614/93409820-c1800780-f865-11ea-8c6b-c3792e35e0c8.png)
 
@@ -31,6 +31,10 @@ A Github Action will run to populate the `module.json` and `module.zip` with the
 ![image](https://user-images.githubusercontent.com/7644614/93409960-10c63800-f866-11ea-83f6-270cc5d10b71.png)
 
 This `module.json` will only ever point at this release's `module.zip`, making it useful for sharing a specific version for compatibility purposes.
+
+7. You can use the url `https://github.com/<user>/<repo>/releases/latest/download/module.json` to refer to the manifest.
+
+This is the url you want to use to install the module typically, as it will get updated automatically.
 
 
 # FoundryVTT Module
