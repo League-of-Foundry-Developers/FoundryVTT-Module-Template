@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/Foundry-v0.7.2-informational)
+![](https://img.shields.io/badge/Foundry-v0.7.7-informational)
 
 # How to use this Template to create a versioned Release
 
