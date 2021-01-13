@@ -2,12 +2,23 @@
   "name": "module",
   "title": "New Module",
   "description": "",
-  "version": "0.0.1",
+  "version": "This is auto replaced",
+  "library": "false",
+  "manifestPlusVersion": "1.0.0",
   "minimumCoreVersion": "0.7.9",
   "compatibleCoreVersion": "0.7.9",
-  "author": "Cody Swendrowski <cody@swendrowski.us>",
+  "authors": [
+    {
+      "name": "The League of Extraordinary FVTT Developers",
+      "url": "https://github.com/League-of-Foundry-Developers",
+      "discord": "discordID#0001"
+    }
+  ],
   "dependencies": [
 
+  ],
+  "conflicts": [
+    
   ],
   "esmodules": [
     "/scripts/module.js"
@@ -25,7 +36,13 @@
       "path": "languages/en.json"
     }
   ],
-  "url": "https://github.com/cswendrowski/FoundryVTT-module",
-  "manifest": "https://github.com/cswendrowski/FoundryVTT-module/releases/download/latest/module.json",
-  "download": "https://github.com/cswendrowski/FoundryVTT-module/releases/download/0.0.1/module.zip"
+  "url": "https://github.com/<USER>/FoundryVTT-module",
+  "manifest": "This is auto replaced",
+  "download": "This is auto replaced",
+  "media": [
+    {
+      "type": "icon",
+      "url": "https://avatars2.githubusercontent.com/u/71292812?s=400&u=ccdb4eeb7abf551ca8f314e5a9bfd0479a4d3d41&v=4"
+    }
+  ]
 }
