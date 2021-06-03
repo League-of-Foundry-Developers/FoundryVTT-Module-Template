@@ -46,7 +46,7 @@ This is the url you want to use to install the module typically, as it will get 
 
 # How to List Your Releases on Package Admin
 
-To request a package listing for your first release, go to https://foundryvtt.com/packages/submit (accessible via a link at the bottom of the "systems and modules" page on the Foundry website).
+To request a package listing for your first release, go to the [Package Submission Form](https://foundryvtt.com/packages/submit) (accessible via a link at the bottom of the "[Systems and Modules](https://foundryvtt.com/packages/)" page on the Foundry website).
 
 Fill in the form. "Package Name" must match the name in the module manifest.  Package Title will be the display name for the package.  Package URL should be your repo URL.
 ![image](https://user-images.githubusercontent.com/36359784/120664263-b49e5500-c482-11eb-9126-af7006389903.png)
@@ -67,4 +67,3 @@ Clicking "Save" in the bottom right will save the new version, which means that 
 Does something, probably
 
 ## Changelog
-
