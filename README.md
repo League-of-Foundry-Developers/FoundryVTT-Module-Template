@@ -52,7 +52,7 @@ Fill in the form. "Package Name" must match the name in the module manifest.  Pa
 ![image](https://user-images.githubusercontent.com/36359784/120664263-b49e5500-c482-11eb-9126-af7006389903.png)
 
 
-One of the Foundry staff will get back to you with an approval or any further questions within a few days, and give you access to the package admin pages.
+One of the Foundry staff will typically get back to you with an approval or any further questions within a few days, and give you access to the package admin pages.
 
 Once you have access to the module admin page, you can release a new version by going into the page for your module, scrolling to the bottom, and filling in a new Package Version.
 
