@@ -54,7 +54,7 @@ Fill in the form. "Package Name" must match the name in the module manifest.  Pa
 
 One of the Foundry staff will typically get back to you with an approval or any further questions within a few days, and give you access to the package admin pages.
 
-Once you have access to the module admin page, you can release a new version by going into the page for your module, scrolling to the bottom, and filling in a new Package Version.
+Once you have access to the [module admin page](https://foundryvtt.com/admin/packages/package/), you can release a new version by going into the page for your module, scrolling to the bottom, and filling in a new Package Version.
 
 When listing a new version, Version should be the version number you set above, and the Manifest URL should be the manifest __for that specific version__ (do not use /latest/ here).
 ![image](https://user-images.githubusercontent.com/36359784/120664346-c4b63480-c482-11eb-9d8b-731b50d70939.png)
