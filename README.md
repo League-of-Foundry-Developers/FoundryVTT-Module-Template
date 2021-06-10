@@ -20,8 +20,6 @@
 
 3. Fill out the release version as the tag name.
 
-## <span color="red">Do not prefix your tag name with a `v`.</span>
-
 If you want to add details at this stage you can, or you can always come back later and edit them.
 
 ![Release Creation Form](https://user-images.githubusercontent.com/7644614/93409543-225b1000-f865-11ea-9a19-f1906a724421.png)
