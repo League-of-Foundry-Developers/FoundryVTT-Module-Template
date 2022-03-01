@@ -28,7 +28,7 @@ jobs:
         download: https://github.com/${{github.repository}}/releases/download/${{github.event.release.tag_name}}/module.zip
 
     # Create a zip file with all files required by the module to add to the release
-    - run: zip -r ./module.zip module.json LICENSE styles/ scripts/ templates/ languages/
+    - run: zip -r ./module.zip module.json README.md LICENSE styles/ scripts/ templates/ languages/
 
     # Create a release for this specific version
     - name: Update Release with Files
