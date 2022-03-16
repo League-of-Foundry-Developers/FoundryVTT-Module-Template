@@ -21,13 +21,13 @@
     
   ],
   "esmodules": [
-    "/scripts/module.js"
+    "scripts/module.js"
   ],
   "scripts": [
-    "/scripts/lib/lib.js"
+    "scripts/lib/lib.js"
   ],
   "styles": [
-    "/styles/module.css"
+    "styles/module.css"
   ],
   "languages": [
     {
