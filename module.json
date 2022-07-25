@@ -1,12 +1,15 @@
 {
-  "name": "module",
+  "id": "module",
   "title": "New Module",
   "description": "",
   "version": "This is auto replaced",
   "library": "false",
   "manifestPlusVersion": "1.0.0",
-  "minimumCoreVersion": "9",
-  "compatibleCoreVersion": "9",
+  "compatibility": {
+    "minimum": 10,
+    "verified": 10,
+    "maximum": 11
+  },
   "authors": [
     {
       "name": "The League of Extraordinary FVTT Developers",
@@ -14,11 +17,9 @@
       "discord": "discordID#0001"
     }
   ],
-  "dependencies": [
-
-  ],
-  "conflicts": [
-    
+  "relationships": [
+    "systems": [],
+    "requires": [],
   ],
   "esmodules": [
     "scripts/module.js"
