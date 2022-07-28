@@ -17,10 +17,10 @@
       "discord": "discordID#0001"
     }
   ],
-  "relationships": [
+  "relationships": {
     "systems": [],
-    "requires": [],
-  ],
+    "requires": []
+  },
   "esmodules": [
     "scripts/module.js"
   ],
