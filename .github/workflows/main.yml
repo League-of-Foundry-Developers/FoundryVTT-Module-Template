@@ -95,9 +95,9 @@ jobs:
           files: 'module.json'
         env:
           version: ${{steps.get_version.outputs.version-without-v}}
-          url: https://github.com/${{github.repository}}
-          manifest: https://github.com/${{github.repository}}/releases/latest/download/module.json
-          download: https://github.com/${{github.repository}}/releases/download/${{github.event.release.tag_name}}/module.zip
+          url: ${{ $env.project_url }}
+          manifest: ${{ $env.latest_manifest_url }}
+          download: ${{ $env.release_module_url }}
 
 
       # Create a "module.zip" archive containing all the module's required files.
@@ -123,7 +123,7 @@ jobs:
             language/                            \
             lang/
           # Don't forget to add a backslash at the end of the line for any
-          # additional files!
+          # additional files or directories!
 
 
       # Update the GitHub release with the manifest and module archive files.
