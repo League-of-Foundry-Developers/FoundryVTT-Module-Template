@@ -73,7 +73,7 @@ jobs:
       # Extract version embedded in the tag.
       # This step expects the tag to be one of the following formats:
       #   - "v<major>.<minor>.<patch>" (e.g., "v1.2.3")
-      #   - "<major>.<minor>.<patch>"  (e.g., "v1.2.3")
+      #   - "<major>.<minor>.<patch>"  (e.g., "1.2.3")
       #
       # The version will be used by later steps to fill in the value for the
       # "version" key required for a valid module manifest.
