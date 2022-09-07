@@ -9,10 +9,3 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-
-  # NPM/Yarn
-  - package-ecosystem: "github-actions"
-    open-pull-requests-limit: 10
-    directory: "/"
-    schedule:
-      interval: "daily"
