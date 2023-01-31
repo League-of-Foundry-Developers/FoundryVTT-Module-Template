@@ -49,7 +49,7 @@ env:
 
 
 on:
-  # Only run this workflow when a a release is published.
+  # Only run this workflow when a release is published.
   # To modify this workflow when other events occur, see:
   #   - https://docs.github.com/en/actions/using-workflows/triggering-a-workflow
   #   - https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
