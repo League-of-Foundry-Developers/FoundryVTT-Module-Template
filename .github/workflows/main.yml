@@ -65,6 +65,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -95,9 +98,9 @@ jobs:
           files: 'module.json'
         env:
           VERSION: ${{steps.get_version.outputs.version-without-v}}
-          URL: ${{ $env.project_url }}
-          MANIFEST: ${{ $env.latest_manifest_url }}
-          DOWNLOAD: ${{ $env.release_module_url }}
+          URL: ${{ env.project_url }}
+          MANIFEST: ${{ env.latest_manifest_url }}
+          DOWNLOAD: ${{ env.release_module_url }}
 
 
       # Create a "module.zip" archive containing all the module's required files.
