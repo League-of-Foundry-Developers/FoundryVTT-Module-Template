@@ -123,7 +123,7 @@ jobs:
             scripts/                             \
             styles/                              \
             packs/                               \
-            language/                            \
+            languages/                           \
             lang/
           # Don't forget to add a backslash at the end of the line for any
           # additional files or directories!
